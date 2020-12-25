@@ -18,3 +18,5 @@ DEMO стенд построен на flask и представляет собо
 ![Скрин-1.PNG]({{site.baseurl}}/Скрин-1.PNG)
 
 ![Скрин-2.PNG]({{site.baseurl}}/Скрин-2.PNG)
+
+Команда проекта: Гайн Роман (gainroman@gmail.com) и  Фомичев Никита (fomichev.n@gmail.com)
