@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <main class="container mt-3 mb-5">
+    <section>
+    <h1 class="h1 text-center mx-auto mt-4 py-5"><strong>Определите тональность отзывов к<br>фильмам, размещенным на<br>kinopoisk.ru</strong></h1>
+
+	
+	<div class="text-center mb-5">
+	
+	<form action="{{ url_for('index_page') }}" method=post>
+		<dl>
+			<dt>Введите отзыв с кинопоиска: <br>
+			<dd><textarea name=text rows=5 cols=90>{{ text }}</textarea>
+			<dd><input type=submit value="Предсказать тональность">
+		</dl>
+	</form>
+
+	</div>
+	
+	<div class="h5">Результат:  {{ prediction_message }}</div>
+	
+    <h2 class="h5 text-center mb-5">Последние отзывы</h2>
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1 m-auto">
+        {% for rev in reviews %}
+        <div class="card mb-4">
+          <div class="card-body">
+		  <h2 class="h4">{{ reviews[rev].unnamed }}</h2>
+            <div class="row">
+              
+                <p class="float-right">Действительная оценка: <b>{{ reviews[rev].mood }} </b></p>
+                
+                <p class="review-id" id="review-id">{{ reviews[rev].rev }}</p>
+
+
+              
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>	
+    </div>
+
+
+
+  </main>
+{% endblock %}

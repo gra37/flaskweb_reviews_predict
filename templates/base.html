@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% include 'header.html' %}
+
+<body>
+{% include 'navigator.html' %}
+
+{% block content %} {% endblock %}
+
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("review-id");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+
+
+{% include 'footer.html' %}
+
+
+</body>
+</html>
