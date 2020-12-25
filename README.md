@@ -15,6 +15,6 @@
 DEMO стенд построен на flask и представляет собой форму для передачи отзыва в модель и получени результата.
 Для удобства отзывы случайным образом подгружаются из общего датасета.
 
-![]({{site.baseurl}}/https://cdn1.savepice.ru/uploads/2020/12/26/8d4c0c09c902c197528363b0ff63ee66-full.png)
+![Скрин-1.PNG]({{site.baseurl}}/Скрин-1.PNG)
 
-![]({{site.baseurl}}/https://cdn1.savepice.ru/uploads/2020/12/26/b8ebbede39cc4dc46daa9900e0fb32f7-full.png)
+![Скрин-2.PNG]({{site.baseurl}}/Скрин-2.PNG)
