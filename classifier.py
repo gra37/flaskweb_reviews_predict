@@ -4,7 +4,7 @@ class Classifier(object):
     def __init__(self):
         self.vectorizer = joblib.load("news_vectorizer_dump.pkl")
         self.model = joblib.load("news_model_dump.pkl")
-        self.target_names = ['Плохой отзыв', 'Хорошый отзыв']
+        self.target_names = ['Отрицательный отзыв', 'Положительный отзыв']
     
     def get_name_by_label(self, label):
         try:
